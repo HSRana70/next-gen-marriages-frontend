@@ -28,7 +28,6 @@ const HeroSection = () => {
           NextGenMarriages gives travelers the chance to be on the guest list of a genuine cultural celebration.
         </p>
 
-       
       </div>
     </div>
   );

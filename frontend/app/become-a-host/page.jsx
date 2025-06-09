@@ -41,13 +41,20 @@ export default function BecomeHostPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2 }}
         >
-          <Link href="/register-wedding">
+          <Link href="/wedding-register">
             <button className="bg-[#45a183] hover:bg-[#3b9175] text-white px-8 py-3 rounded-full text-lg font-semibold transition duration-300">
               Register your wedding
             </button>
           </Link>
+
+          <Link href="/join-marriages-register">
+            <button className="bg-[#45a183] hover:bg-[#3b9175] text-white px-8 py-3 rounded-full text-lg font-semibold transition duration-300 flex flex-col mt-2">
+              join wedding
+            </button>
+          </Link>
         </motion.div>
       </div>
+      
     </div>
   );
 }
