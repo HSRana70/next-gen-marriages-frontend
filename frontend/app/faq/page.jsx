@@ -6,24 +6,24 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const faqs = [
   {
-    question: "What is NextGenMarriages about?",
+    question: "What is NextGenMarriages?",
     answer:
-      "NextGenMarriages is a global platform that connects wedding hosts with travelers and culture enthusiasts who want to experience the magic of authentic weddings.",
+      "NextGenMarriages is an innovative platform that invites travelers to become part of real-life wedding celebrations, offering them a window into the rich traditions, rituals, and joy of diverse cultures.",
   },
   {
-    question: "What inspired the idea of inviting people to join weddings?",
+    question: "How does the idea of joining weddings work?",
     answer:
-      "Our idea was born from the belief that weddings are one of the most beautiful ways to experience local culture, traditions, and hospitality.",
+      "We believe that weddings are one of the most intimate expressions of a culture. By connecting global guests with welcoming hosts, we create authentic cultural experiences rooted in genuine human connection.",
   },
   {
-    question: "What role can weddings play in connecting people across cultures?",
+    question: "How do weddings promote cultural understanding?",
     answer:
-      "Weddings provide a unique opportunity for guests to engage deeply with cultural rituals, music, food, and social interactions— fostering understanding and friendship.",
+      "Participating in a wedding allows guests to experience the nuances of cultural practices— from traditional ceremonies to regional cuisine— fostering empathy, respect, and global friendships.",
   },
   {
-    question: "Where is NextGenMarriages located?",
+    question: "Is NextGenMarriages available worldwide?",
     answer:
-      "NextGenMarriages operates globally through its online platform, with active listings currently focused in India and expanding internationally.",
+      "Our community is growing rapidly! While we currently focus on Indian weddings, we aim to expand to offer wedding experiences across various cultures and countries in the near future.",
   },
 ];
 
@@ -39,7 +39,7 @@ export default function FaqSection() {
       {/* Gradient Header */}
       <div className="bg-gradient-to-r from-[#10325a] to-[#10325a] text-white text-center py-8">
         <h2 className="text-3xl font-bold">FAQ</h2>
-        <p className="text-lg mt-2">Frequently asked questions</p>
+        <p className="text-lg mt-2">Your questions answered</p>
       </div>
 
       {/* FAQ Content */}

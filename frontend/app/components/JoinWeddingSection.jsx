@@ -12,16 +12,16 @@ export default function JoinWeddingSection() {
       }}
     >
       <p className="text-sm font-semibold text-white tracking-wide mb-2">
-        DO YOU TRAVEL THE WORLD?
+        LOVE EXPLORING CULTURES?
       </p>
       <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-8">
-        Where would you like to join a wedding?
+       Enjoy Indian Wedding Celebrations
       </h2>
       <Link href="/join-marriages-register" passHref>
         <button
-          className="bg-white text-[#10325a] px-8 py-3 rounded-full text-base font-semibold hover:bg-gray-100 transition duration-300"
+          className="bg-white text-[#10325a] px-8 py-3 rounded-full text-base font-semibold hover:bg-gray-200 transition duration-300"
         >
-          SUGGEST ANOTHER COUNTRY
+          SHARE YOUR DREAM DESTINATION
         </button>
       </Link>
     </div>

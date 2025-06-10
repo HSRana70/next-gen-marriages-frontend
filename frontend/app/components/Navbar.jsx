@@ -13,7 +13,7 @@ const Navbar = () => {
       {/* Logo */}
       <Link href="/" className="flex items-center space-x-3 cursor-pointer">
         <Image src="/logo.png" alt="JoinMyMarriage" width={36} height={36} />
-        <h1 className="text-xl font-semibold">NextGenMarriages</h1>
+        <h1 className="text-xl font-semibold">JoinMarriages</h1>
       </Link>
 
       {/* Desktop Nav */}

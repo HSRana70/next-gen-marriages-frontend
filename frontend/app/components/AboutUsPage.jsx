@@ -16,7 +16,7 @@ export default function AboutUsPage() {
           About JoinMarriages
         </h1>
         <p className="text-gray-600 text-lg">
-          Celebrating culture, connection, and unforgettable Indian weddings.
+          Celebrating culture, connection and unforgettable Indian weddings.
         </p>
       </motion.div>
 

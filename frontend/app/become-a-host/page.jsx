@@ -24,7 +24,7 @@ export default function BecomeHostPage() {
           transition={{ duration: 0.8 }}
           className="text-white text-4xl md:text-6xl font-bold mb-4 max-w-2xl"
         >
-          Open your wedding to travelers and create new connections
+          Share your celebration. Inspire the world.
         </motion.h1>
 
         <motion.p
@@ -33,7 +33,7 @@ export default function BecomeHostPage() {
           transition={{ duration: 1 }}
           className="text-white text-lg md:text-2xl mb-6 max-w-xl"
         >
-          Let global travelers join your big day, celebrate with your family, and experience your traditions.
+           Open your wedding to international guests and offer them a once-in-a-lifetime chance to experience your culture, your rituals, and your joy.
         </motion.p>
 
         <motion.div

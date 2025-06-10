@@ -4,39 +4,40 @@ import { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
+
 const guestFaqs = [
   {
-    question: 'Why should I attend a stranger’s wedding?',
+    question: 'What makes attending a wedding abroad special?',
     answer:
-      'Attending a local wedding offers a rare opportunity to experience authentic traditions, cultural rituals, and community celebrations that you would never access as a regular tourist.',
+      'Weddings are one of the most authentic cultural experiences. Through NextGenMarriages, you’ll witness local customs, taste traditional food, and participate in heartfelt celebrations — something no guidebook can offer.',
   },
   {
-    question: 'Why should I use NextGenMarriages?',
+    question: 'How does NextGenMarriages enhance my travel?',
     answer:
-      'NextGenMarriages connects travelers with trusted hosts, ensuring a safe, respectful, and well-organized cultural experience during weddings worldwide.',
+      'NextGenMarriages offers curated cultural experiences through weddings, giving you access to trusted hosts, personalized guidance, and memories that last far beyond your trip.',
   },
   {
-    question: 'Why am I paying to be a guest?',
+    question: 'Why is there a guest fee?',
     answer:
-      'Your fee supports the host family for arrangements such as meals, seating, attire guidance, and helps facilitate a smooth guest experience while respecting their traditions.',
+      'The fee supports the host family in creating a warm and welcoming environment — including meals, cultural attire recommendations, and logistical coordination to ensure a respectful, seamless experience.',
   },
 ];
 
 const hostFaqs = [
   {
-    question: 'Why invite foreigners to my wedding?',
+    question: 'Why should I welcome global guests to my wedding?',
     answer:
-      'Sharing your wedding with global guests fosters cultural exchange, brings a sense of pride in your traditions, and often results in lifelong friendships.',
+      'Hosting international guests allows you to share your rich traditions with the world. It fosters cultural harmony, creates meaningful connections, and brings a global spotlight to your celebration.',
   },
   {
-    question: 'Why use NextGenMarriages?',
+    question: 'How does NextGenMarriages support me as a host?',
     answer:
-      'NextGenMarriages helps hosts connect with respectful and verified international guests, manage invitations, and ensure an organized experience for everyone involved.',
+      'We help you connect with respectful, pre-screened international guests and assist with communication, expectations, and coordination so you can focus on enjoying your big day.',
   },
   {
-    question: 'How do I know that the guests will respect my wedding?',
+    question: 'Will guests respect our culture and customs?',
     answer:
-      'All our guests are carefully guided about local etiquette and expectations before attending. We foster mutual respect and cultural understanding throughout the process.',
+      'Absolutely. Each guest is educated about cultural etiquette, dress codes, and event protocols before the wedding, ensuring that all interactions are grounded in mutual respect.',
   },
 ];
 
@@ -64,11 +65,11 @@ export default function MoreAboutSection() {
 
       {/* Content */}
       <div className="relative max-w-5xl mx-auto bg-white rounded-lg shadow-lg p-6 sm:p-10 md:p-16">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-[#10325a]">MORE ABOUT NextGenMarriages</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-[#10325a]">DISCOVER JOINMARRIAGES</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Guests Column */}
           <div>
-            <h3 className="text-xl font-semibold mb-6 text-gray-800">FOR GUESTS</h3>
+            <h3 className="text-xl font-semibold mb-6 text-gray-800">FOR GLOBAL GUESTS</h3>
             {guestFaqs.map((faq, index) => (
               <div key={index} className="border-b border-gray-300 py-4">
                 <button
@@ -97,7 +98,7 @@ export default function MoreAboutSection() {
 
           {/* Hosts Column */}
           <div>
-            <h3 className="text-xl font-semibold mb-6 text-gray-800">FOR HOSTS</h3>
+            <h3 className="text-xl font-semibold mb-6 text-gray-800">FOR WEDDING HOSTS</h3>
             {hostFaqs.map((faq, index) => (
               <div key={index} className="border-b border-gray-300 py-4">
                 <button
@@ -127,12 +128,12 @@ export default function MoreAboutSection() {
 
         {/* Button */}
         <div className="flex justify-center mt-12">
-  <Link href="/faq">
-    <button className="bg-[#10325a] text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-[#10325a] transition">
-      FIND OUT MORE
-    </button>
-  </Link>
-</div>
+          <Link href="/faq">
+            <button className="bg-[#10325a] text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-[#0b284a] transition">
+              LEARN MORE ABOUT US
+            </button>
+          </Link>
+        </div>
       </div>
     </section>
   );
