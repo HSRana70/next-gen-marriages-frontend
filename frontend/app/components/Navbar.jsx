@@ -25,10 +25,10 @@ const Navbar = () => {
       </ul>
 
       {/* Profile Button (Desktop) */}
-      <Link href="/profile" className="hidden md:flex items-center space-x-2 border border-[#10325a] rounded-full px-4 py-1 hover:bg-[#f0f8ff] transition cursor-pointer">
+      {/* <Link href="/profile" className="hidden md:flex items-center space-x-2 border border-[#10325a] rounded-full px-4 py-1 hover:bg-[#f0f8ff] transition cursor-pointer">
         <span className="text-[#10325a] font-semibold text-sm">MY PROFILE</span>
         <Image src="/profile-icon.png" alt="Profile" width={28} height={28} className="rounded-full" />
-      </Link>
+      </Link> */}
 
       {/* Hamburger Menu Icon */}
       <button onClick={() => setIsOpen(!isOpen)} className="md:hidden text-2xl text-[#10325a]">

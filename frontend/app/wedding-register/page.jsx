@@ -34,20 +34,31 @@ export default function WeddingRegisterPage() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Simulate form submission
-    console.log('Form Data:', formData);
+    try {
+      const response = await fetch('https://admin.nextgentrip.com/api/v1/wedding-events', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
 
-    // Mark as submitted
-    setSubmitted(true);
+      if (response.ok) {
+        console.log('Form submitted successfully');
+        setSubmitted(true);
 
-    // Scroll to top so user sees the thank you message
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-
-    // OPTIONAL: You can reset the form if needed
-    // setFormData({ ...initialState });
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        console.error('Failed to submit form:', response.status);
+        alert('There was an error submitting your wedding registration. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('There was an error submitting your wedding registration. Please try again.');
+    }
   };
 
   return (
@@ -61,15 +72,6 @@ export default function WeddingRegisterPage() {
             <p className="text-lg text-gray-700 mb-6">
               Your wedding registration has been submitted successfully. We will review your details and contact you shortly.
             </p>
-            {/* <button
-              onClick={() => {
-                // Optionally allow user to register again
-                setSubmitted(false);
-              }}
-              className="bg-[#10325a] text-white py-3 px-6 rounded-lg font-semibold hover:bg-[#0b264f] transition"
-            >
-              Register Another Wedding
-            </button> */}
           </div>
         ) : (
           <>

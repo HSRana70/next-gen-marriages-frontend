@@ -20,7 +20,7 @@ export default function GuestRegisterPage() {
     stayDuration: '',
     travelArranged: '',
     needAssistance: '',
-    paidExperience: '',
+    paidExperience: 'Free',
     budget: '',
     consent: false,
     promoConsent: false,
@@ -56,15 +56,31 @@ export default function GuestRegisterPage() {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form Data:', formData);
 
-    // Mark as submitted
-    setSubmitted(true);
+    try {
+      const response = await fetch('https://admin.nextgentrip.com/api/v1/wedding-joiners', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
 
-    // Auto scroll to top
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+      if (response.ok) {
+        console.log('Form submitted successfully');
+        setSubmitted(true);
+
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        console.error('Failed to submit form:', response.status);
+        alert('There was an error submitting your registration. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('There was an error submitting your registration. Please try again.');
+    }
   };
 
   return (
@@ -169,7 +185,7 @@ export default function GuestRegisterPage() {
 
               {/* Budget */}
               <div>
-                <h2 className="text-xl font-semibold text-[#45a183] mb-2">Budget & Preferences</h2>
+                {/* <h2 className="text-xl font-semibold text-[#45a183] mb-2">Budget & Preferences</h2>
                 <div className="space-y-2">
                   <p>Are you open to paid experiences?</p>
                   {['Yes', 'No'].map((val) => (
@@ -178,7 +194,7 @@ export default function GuestRegisterPage() {
                       <span>{val}</span>
                     </label>
                   ))}
-                </div>
+                </div> */}
 
                 <input name="budget" value={formData.budget} onChange={handleChange} type="text" placeholder="Approximate Budget (INR)" className="border p-3 rounded w-full mt-4" />
               </div>
