@@ -12,7 +12,7 @@ export default function AboutUsPage() {
         transition={{ duration: 0.6 }}
         className="text-center max-w-4xl mx-auto mb-14"
       >
-        <h1 className="text-2xl md:text-6xl font-extrabold text-[#10325a] mb-4">
+        <h1 className="text-2xl md:text-4xl font-extrabold text-[#10325a] mb-4">
           About JoinMarriages
         </h1>
         <p className="text-gray-600 text-lg">

@@ -11,14 +11,15 @@ export default function Home() {
   return (
     <div>
       <HeroSection/>
-      <Testinomials/>
+       <AboutUsPage/>
+      
       
       <HostInvitationSection/>
       <CulturalImmersionSection/>
       
       
        <JoinWeddingSection/>
-      <AboutUsPage/>
+     <Testinomials/>
       <MoreAboutSection/>
      
    

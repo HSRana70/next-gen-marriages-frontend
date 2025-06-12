@@ -33,7 +33,7 @@ const Footer = () => {
         <div>
           <h3 className="font-semibold mb-3">Legal</h3>
           <ul className="space-y-2 text-sm">
-            <li><Link href="/terms" className="hover:underline">Terms & Conditions</Link></li>
+            <li><Link href="/terms-and-conditions" className="hover:underline">Terms & Conditions</Link></li>
             <li><Link href="#" className="hover:underline">Privacy Policy</Link></li>
             <li><Link href="#" className="hover:underline">Refund Policy</Link></li>
           </ul>
@@ -43,21 +43,33 @@ const Footer = () => {
         <div>
           <h3 className="font-semibold mb-3">Stay Connected</h3>
           <form className="flex mb-4">
-            <input
-              type="email"
-              placeholder="Your email"
-              className="w-full px-3 py-2 rounded-l-md text-[#10325a] text-sm border border-white p-4"
-            />
-            <button className="bg-white  text-[#10325a] px-4 py-2 rounded-r-md text-sm font-medium border border-white p-4 transition">
-              Subscribe
-            </button>
-          </form>
+  <input
+    type="email"
+    placeholder="Your email"
+    className="w-full px-4 py-2 rounded-l-md text-white text-sm border border-white bg-transparent placeholder-white focus:outline-none focus:ring-2 focus:ring-white"
+  />
+  <button
+    type="submit"
+    className="bg-white text-[#10325a] px-4 py-2 rounded-r-md text-sm font-medium border border-white transition hover:bg-gray-100"
+  >
+    Subscribe
+  </button>
+</form>
+
           <div className="flex space-x-4 text-white text-lg">
-            <FaFacebookF className="hover:text-cyan-300 cursor-pointer" />
-            <FaXTwitter className="hover:text-cyan-300 cursor-pointer" />
-            <FaYoutube className="hover:text-cyan-300 cursor-pointer" />
-            <FaInstagram className="hover:text-cyan-300 cursor-pointer" />
-          </div>
+  <a href="https://www.facebook.com/profile.php?id=61573763406606" target="_blank" rel="noopener noreferrer">
+    <FaFacebookF className="hover:text-cyan-300 cursor-pointer" />
+  </a>
+  <a href="https://x.com/NextGenTrip" target="_blank" rel="noopener noreferrer">
+    <FaXTwitter className="hover:text-cyan-300 cursor-pointer" />
+  </a>
+  <a href="https://www.youtube.com/@NextGenTrip-g5t" target="_blank" rel="noopener noreferrer">
+    <FaYoutube className="hover:text-cyan-300 cursor-pointer" />
+  </a>
+  <a href="https://www.instagram.com/nextgentrip/" target="_blank" rel="noopener noreferrer">
+    <FaInstagram className="hover:text-cyan-300 cursor-pointer" />
+  </a>
+</div>
         </div>
       </div>
 
