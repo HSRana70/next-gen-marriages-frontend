@@ -7,7 +7,6 @@ import { FiMenu, FiX } from 'react-icons/fi';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
   return (
     <nav className="bg-white text-[#10325a] py-4 px-6 shadow-md flex justify-between items-center relative z-50">
       {/* Logo */}
