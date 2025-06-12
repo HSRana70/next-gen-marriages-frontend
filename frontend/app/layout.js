@@ -39,7 +39,15 @@ export default function RootLayout({ children }) {
       <meta name="keywords" content='visa consults' />
 
 
-     <Script
+    
+      </head>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      ><Navbar/>
+        {children}
+        <Footer/>
+      </body>
+       <Script
           src={`https://www.googletagmanager.com/gtag/js?id=G-RH2QNGFGK7`}
           strategy="afterInteractive"
         />
@@ -51,13 +59,6 @@ export default function RootLayout({ children }) {
             gtag('config', 'G-RH2QNGFGK7');
           `}
         </Script>
-      </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      ><Navbar/>
-        {children}
-        <Footer/>
-      </body>
     </html>
   );
 }
