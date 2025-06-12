@@ -8,7 +8,7 @@ import { FiMenu, FiX } from 'react-icons/fi';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className="bg-white text-[#10325a] py-4 px-6 shadow-md flex justify-between items-center relative z-50">
+    <nav className="bg-white text-[#10325a] py-4 px-6 shadow-md flex justify-between items-center relative z-50 sticky top-0 z-50 ">
       {/* Logo */}
       <Link href="/" className="flex items-center space-x-3 cursor-pointer">
         <Image src="/images/logo.jpeg" alt="JoinMyMarriage" width={36} height={36} />
