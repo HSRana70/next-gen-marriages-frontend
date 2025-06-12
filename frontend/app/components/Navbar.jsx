@@ -12,7 +12,7 @@ const Navbar = () => {
     <nav className="bg-white text-[#10325a] py-4 px-6 shadow-md flex justify-between items-center relative z-50">
       {/* Logo */}
       <Link href="/" className="flex items-center space-x-3 cursor-pointer">
-        <Image src="/logo.png" alt="JoinMyMarriage" width={36} height={36} />
+        <Image src="/images/logo.jpeg" alt="JoinMyMarriage" width={36} height={36} />
         <h1 className="text-xl font-semibold">JoinMarriages</h1>
       </Link>
 
