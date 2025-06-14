@@ -1,18 +1,24 @@
 // app/contact/page.jsx or pages/contact.js
 
-'use client'; // if using app directory
+"use client"; // if using app directory
 
-import React, { useState } from 'react';
-import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube, FaLinkedinIn } from 'react-icons/fa';
-import { motion } from 'framer-motion';
-import toast, { Toaster } from 'react-hot-toast';
+import React, { useState } from "react";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaTwitter,
+  FaYoutube,
+  FaLinkedinIn,
+} from "react-icons/fa";
+import { motion } from "framer-motion";
+import toast, { Toaster } from "react-hot-toast";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
   });
 
   const handleChange = (e) => {
@@ -26,13 +32,15 @@ export default function ContactPage() {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Here you can integrate your backend / API call
-    toast.success('Thank you! Your message has been submitted. We will get back to you shortly.');
+    toast.success(
+      "Thank you! Your message has been submitted. We will get back to you shortly."
+    );
     // Reset form
     setFormData({
-      name: '',
-      email: '',
-      subject: '',
-      message: '',
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
     });
   };
 
@@ -61,15 +69,20 @@ export default function ContactPage() {
         >
           <h2 className="text-2xl font-bold mb-4">GET IN TOUCH</h2>
           <p className="text-gray-700 mb-4">
-            Whether you're a wedding host, a traveler looking to join weddings globally, a partner, or just someone with a question — we would love to hear from you.
+            Whether you're a wedding host, a traveler looking to join weddings
+            globally, a partner, or just someone with a question — we would love
+            to hear from you.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6">
             <div>
               <p className="text-gray-700 mb-2">
-                📧 <strong>Email (Support):</strong>{' '}
-                <a href="mailto:support@nextgenmarriages.com" className="text-[#10325a] font-semibold hover:underline">
-                  support@nextgenmarriages.com
+                📧 <strong>Email (Support):</strong>{" "}
+                <a
+                  href="mailto:support@nextgenmarriages.com"
+                  className="text-[#10325a] font-semibold hover:underline"
+                >
+                  info@joinmarriages.com
                 </a>
               </p>
               {/* <p className="text-gray-700 mb-2">
@@ -79,16 +92,19 @@ export default function ContactPage() {
                 </a>
               </p> */}
               <p className="text-gray-700 mb-2">
-                🌐 <strong>Global Support Hours:</strong> Mon - Fri: 08:00 - 20:00 UTC
+                🌐 <strong>Global Support Hours:</strong> Mon - Fri: 08:00 -
+                20:00 UTC
               </p>
             </div>
 
             <div>
               <p className="text-gray-700 mb-2">
-                🌎 <strong>Global Offices:</strong> Operating in India, Europe, US, and expanding worldwide.
+                🌎 <strong>Global Offices:</strong> Operating in India, Europe,
+                US, and expanding worldwide.
               </p>
               <p className="text-gray-700 mb-2">
-                🕑 <strong>Response Time:</strong> We typically reply within 24-48 business hours.
+                🕑 <strong>Response Time:</strong> We typically reply within
+                24-48 business hours.
               </p>
             </div>
           </div>
@@ -97,11 +113,36 @@ export default function ContactPage() {
           <div className="mt-8">
             <h3 className="text-lg font-semibold mb-2">Follow us:</h3>
             <div className="flex space-x-4 text-[#10325a] text-xl">
-              <a href="#" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
-              <a href="#" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-              <a href="#" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
-              <a href="#" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
-              <a href="#" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61573763406606"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaFacebookF />
+              </a>
+              <a
+                href="https://www.instagram.com/nextgentrip/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaInstagram />
+              </a>
+              <a
+                href="https://x.com/NextGenTrip"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaTwitter />
+              </a>
+              <a
+                href="https://www.youtube.com/@NextGenTrip-g5t"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaYoutube />
+              </a>
+              
+             
             </div>
           </div>
         </motion.div>

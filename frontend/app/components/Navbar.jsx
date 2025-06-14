@@ -18,10 +18,11 @@ const Navbar = () => {
       {/* Desktop Nav */}
       <ul className="hidden md:flex space-x-8 font-medium text-sm">
         <li><Link href="/weddings">WEDDINGS</Link></li>
+         <li><Link href="/become-a-host">BECOME A HOST</Link></li>
         <li><Link href="/blog">BLOG</Link></li>
         <li><Link href="/faq">FAQ</Link></li>
         <li><Link href="/contact">CONTACT US</Link></li>
-        <li><Link href="/become-a-host">BECOME A HOST</Link></li>
+       
       </ul>
 
       {/* Profile Button (Desktop) */}
@@ -39,14 +40,15 @@ const Navbar = () => {
       {isOpen && (
         <div className="absolute top-full left-0 w-full bg-white shadow-md py-6 px-6 flex flex-col space-y-4 md:hidden">
           <Link href="/weddings" onClick={() => setIsOpen(false)}>WEDDINGS</Link>
+          <Link href="/become-a-host" onClick={() => setIsOpen(false)}>BECOME A HOST</Link>
           <Link href="/blog" onClick={() => setIsOpen(false)}>BLOG</Link>
           <Link href="/faq" onClick={() => setIsOpen(false)}>FAQ</Link>
           <Link href="/contact" onClick={() => setIsOpen(false)}>CONTACT US</Link>
-          <Link href="/become-a-host" onClick={() => setIsOpen(false)}>BECOME A HOST</Link>
-          <Link href="/profile" onClick={() => setIsOpen(false)} className="flex items-center space-x-2 border border-[#10325a] rounded-full px-4 py-2 hover:bg-[#f0f8ff] transition">
+          
+          {/* <Link href="/profile" onClick={() => setIsOpen(false)} className="flex items-center space-x-2 border border-[#10325a] rounded-full px-4 py-2 hover:bg-[#f0f8ff] transition">
             <span className="text-[#10325a] font-semibold text-sm">MY PROFILE</span>
             <Image src="/profile-icon.png" alt="Profile" width={24} height={24} className="rounded-full" />
-          </Link>
+          </Link> */}
         </div>
       )}
     </nav>

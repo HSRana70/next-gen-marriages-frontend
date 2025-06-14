@@ -47,8 +47,8 @@ export default function BecomeHostPage() {
             </button>
           </Link>
 
-          <Link href="/join-marriages-register">
-            <button className="bg-[#45a183] hover:bg-[#3b9175] text-white px-8 py-3 rounded-full text-lg font-semibold transition duration-300 flex flex-col mt-2">
+          <Link href="/join-wedding">
+            <button className="bg-[#45a183] hover:bg-[#f0f58d] hover:text-black text-white px-8 py-3 rounded-full text-lg font-semibold transition duration-300 flex flex-col mt-2 hover:cursor-pointer">
               join wedding
             </button>
           </Link>
